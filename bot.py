@@ -58,7 +58,7 @@ async def button_click(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
 # Main function to start the bot
 def main():
-    application = Application.builder().token(7979826252:AAG6PkktURFL-udAd3KipzwiFXp6FEQDbCg).build()
+    application = Application.builder().token(BOT_TOKEN).build()
     
     # Add handlers
     application.add_handler(CommandHandler("start", start))
