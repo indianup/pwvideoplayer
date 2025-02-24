@@ -1,5 +1,6 @@
 import os
 import re
+from vars import API_ID, API_HASH, BOT_TOKEN
 from telegram import Update, InlineKeyboardButton, InlineKeyboardMarkup
 from telegram.ext import Application, CommandHandler, MessageHandler, filters, CallbackQueryHandler, ContextTypes
 
