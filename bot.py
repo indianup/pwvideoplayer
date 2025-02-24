@@ -1,10 +1,13 @@
 import os
 import re
-from vars import API_ID, API_HASH, BOT_TOKEN
 from telegram import Update, InlineKeyboardButton, InlineKeyboardMarkup
 from telegram.ext import Application, CommandHandler, MessageHandler, filters, CallbackQueryHandler, ContextTypes
 
 # Get the bot token from environment variables
+# Environment variables for API credentials
+API_ID = os.environ.get("API_ID", "21705536")
+API_HASH = os.environ.get("API_HASH", "c5bb241f6e3ecf33fe68a444e288de2d")
+BOT_TOKEN = os.environ.get("BOT_TOKEN", "7979826252:AAG6PkktURFL-udAd3KipzwiFXp6FEQDbCg")
 BOT_TOKEN = os.getenv("7979826252:AAG6PkktURFL-udAd3KipzwiFXp6FEQDbCg")
 
 # Function to extract vid_id from the link
