@@ -3,8 +3,8 @@ import re
 from telegram import Update, InlineKeyboardButton, InlineKeyboardMarkup
 from telegram.ext import Application, CommandHandler, MessageHandler, filters, CallbackQueryHandler, ContextTypes
 
-# Replace with your bot token
-BOT_TOKEN = 'YOUR_BOT_TOKEN_HERE'
+# Get the bot token from environment variables
+BOT_TOKEN = os.getenv("BOT_TOKEN")
 
 # Function to extract vid_id from the link
 def extract_vid_id(link):
